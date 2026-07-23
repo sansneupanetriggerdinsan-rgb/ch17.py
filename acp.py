@@ -1,19 +1,21 @@
-marks = [85,97,78,88,95,67,81]
-print('student marks:', marks)
-print ("\n number of students:", len(marks))
-print("\nfirst mark:",marks[0])
-print("\nlast mark:", marks [-1])
-print ("\nfirst three marks:", marks [:3])
-print ("\nlast three marks:", marks[-3])
-print("\nmarks obtained by students:")
-for mark in marks:
-    print(mark)
-total = sum(marks)
-average= total / len(marks)
-smallest= min(marks)
-largest= max(marks)
-print("\n-----marks summary-----")
-print("the total marks:",total)
-print("average marks:", round (average, 2))
-print("smallest marks:", smallest)
-print("largest marks:",largest)
+# Program to calculate trigonometric values using the math module
+
+import math
+
+# Input angle in degrees
+angle = float(input("Enter an angle in degrees: "))
+
+# Convert degrees to radians
+radian = math.radians(angle)
+
+# Calculate trigonometric values
+sin_value = math.sin(radian)
+cos_value = math.cos(radian)
+tan_value = math.tan(radian)
+
+# Display the results
+print("\nTrigonometric Values")
+print("--------------------")
+print("sin(", angle, ") =", sin_value)
+print("cos(", angle, ") =", cos_value)
+print("tan(", angle, ") =", tan_value)
